@@ -1,0 +1,440 @@
+/* 
+    Document   : style
+    Created on : 19.11.2012, 15:38:05
+    Author     : amarkushev
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* ----- NORMAL ------ */
+
+body {
+	font-family: Cambria, 'Times New Roman',Times,serif;
+	font-size: 16px;
+	background: #e5e2de;
+        color: #2e2d2d;
+}
+
+#wrapper {
+	display: block;
+	width: 100%;
+	min-width: 700px;
+}
+
+header {
+	display: block;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	font-size: 3em;
+        font-style: italic;
+}
+
+h2 {
+	font-family: Cambria, 'Times New Roman',Times,serif;
+	font-size: 1.5em;
+        font-style: italic;
+}
+
+h3.await-title {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bolder;
+    margin-bottom: -0.5em;
+    margin-left: 1em;
+}
+
+h2 + h3 {
+    margin-top: 1em;
+}
+
+a {
+	color: #2e2d2d;
+        text-decoration: underline;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+#loginform {
+    width: 448px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #fdfdfc;
+    color: #272c30;
+    padding: 16px 32px;
+    border: 1px solid #8a857e;
+}
+
+#loginform h2, #loginform h1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    margin-bottom: 32px;
+}
+
+#loginform h2 {
+    text-align: right;
+}
+
+#loginform input {
+    display: block;
+    width: 90%;
+    background: #2b3034;
+    color: #fdfdfc;
+    font-style: italic;
+    border: 0;
+    padding: 8px 5%;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
+
+#loginform label {
+    font-size: 1.5em;
+}
+
+#loginsubmit {
+    width: 40% !important;
+    float: right;
+    margin-top: 16px;
+}
+
+#user-panel {
+    display: block;
+    width: 98%;
+    height: 32px;
+    background: #fdfcfb;
+    padding: 16px 1%;
+    position: relative;
+}
+
+#logo {
+    font-size: 2em;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo a {
+    color: #272c30;
+    text-decoration: none;
+}
+
+#actions-panel {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: italic;
+    margin-left: 40px;
+}
+
+#users-list {
+    display: block;
+    background: #2e2e2e;
+    color: #fdfcfb;
+    padding: 8px;
+    font-style: italic;
+}
+
+#users-list a {
+    color: #fdfcfb;
+}
+
+#user-info {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 32px;
+    font-size: 1.3em;
+    text-align: right;
+    background: #2b3034;
+    color: #e8e9e8;
+    padding: 16px;
+}
+
+#user-controls {
+    font-size: 0.6em;
+}
+
+#user-controls a {
+    color: #e8e9e8;
+}
+
+#dices-panel {
+    padding: 16px;
+}
+
+.square {
+    display: inline-block;
+    margin: 16px;
+    margin-bottom: 32px;
+    width: 156px;
+    height: 156px;
+    padding: 10px;
+    background: #2e2e2e;
+    color: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+.owner-link {
+    color: #fdfcfb;
+}
+
+.square-button a.owner-link {
+        display: inline;
+}
+
+.square-description {
+    display: block;
+    width: 156px;
+    height: 40px;
+}
+
+.square-title {
+    display: block;
+    width: 156px;
+    height: 45px;
+}
+
+.square-subtitle {
+    display: block;
+    width: 156px;
+    height: 45px;
+}
+
+.square-button .likeabutton {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 156px;
+    height: 156px;
+
+}
+
+.square {
+    box-shadow: 0px -2px 1px #000, 0px 2px 1px #fff;
+}
+
+.square-button {
+    box-shadow: 0px 2px 1px #000, 0px -1px 0px #fff;
+}
+
+.square-rolldice {
+    background: #2b0e0e;
+}
+
+.square-rolldice .square-signature {
+    position: absolute;
+    bottom: 1em;
+    width: 90%;
+}
+
+.square-rolldice .square-title {
+    font-size: 1.5em;
+}
+
+.square-rolldice .square-description {
+    height: auto;
+}
+
+.square-rolldice input {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 176px;
+    height: 176px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.square-rolleddice {
+    background: #af8f11;
+}
+
+.square-closeddice {
+    background: #164820;
+}
+
+.square-signature {
+    font-size: 0.75em;
+}
+
+#selfrolldice {
+    background: url(images/selfroll.jpg) center center no-repeat;
+}
+
+.square-dice-4 {
+    background: url(images/roll-4.jpg) center center no-repeat;
+}
+
+.square-dice-6 {
+    background: url(images/roll-6.jpg) center center no-repeat;
+}
+
+.square-dice-8 {
+    background: url(images/roll-8.jpg) center center no-repeat;
+}
+
+.square-dice-10 {
+    background: url(images/roll-10.jpg) center center no-repeat;
+}
+
+.square-dice-12 {
+    background: url(images/roll-12.jpg) center center no-repeat;
+}
+
+.square-dice-20 {
+    background: url(images/roll-20.jpg) center center no-repeat;
+}
+
+.square-dice-100 {
+    background: url(images/roll-100.jpg) center center no-repeat;
+}
+
+.square-dice-4-rolled {
+    background: url(images/rolled-4.jpg) center center no-repeat;
+}
+
+.square-dice-6-rolled {
+    background: url(images/rolled-6.jpg) center center no-repeat;
+}
+
+.square-dice-8-rolled {
+    background: url(images/rolled-8.jpg) center center no-repeat;
+}
+
+.square-dice-10-rolled {
+    background: url(images/rolled-10.jpg) center center no-repeat;
+}
+
+.square-dice-12-rolled {
+    background: url(images/rolled-12.jpg) center center no-repeat;
+}
+
+.square-dice-20-rolled {
+    background: url(images/rolled-20.jpg) center center no-repeat;
+}
+
+.square-dice-100-rolled {
+    background: url(images/rolled-100.jpg) center center no-repeat;
+}
+
+.square-dice-4-closed {
+    background: url(images/closed-4.jpg) center center no-repeat;
+}
+
+.square-dice-6-closed {
+    background: url(images/closed-6.jpg) center center no-repeat;
+}
+
+.square-dice-8-closed {
+    background: url(images/closed-8.jpg) center center no-repeat;
+}
+
+.square-dice-10-closed {
+    background: url(images/closed-10.jpg) center center no-repeat;
+}
+
+.square-dice-12-closed {
+    background: url(images/closed-12.jpg) center center no-repeat;
+}
+
+.square-dice-20-closed {
+    background: url(images/closed-20.jpg) center center no-repeat;
+}
+
+.square-dice-100-closed {
+    background: url(images/closed-100.jpg) center center no-repeat;
+}
+
+.delete-link {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    z-index: 9999;
+}
+
+.delete-link img {
+    display: block;
+}
+
+.approve-link {
+    display: inline-block;
+}
